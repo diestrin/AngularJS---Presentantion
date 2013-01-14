@@ -1,0 +1,113 @@
+// INTRODUCTION - START
+
+#intro .root-content{
+	text-align: justify;
+
+	em{
+		font-size: 1.3em;
+	}
+
+	strong{
+		font-size: 1.4em;
+	}
+}
+
+#the-need .root-content {
+	font-size: 0.7em;
+}
+
+#other-frame .root-content {
+	li{
+		a{
+			color: gray;
+			border-bottom: 1px dotted;
+
+			&:hover{
+				color: black;
+			}
+		}
+	}
+}
+
+#html-vs-angular .root-content{
+	font-size: 0.55em;
+
+	ul{
+		li{
+			&:nth-child(odd){
+				&:before{
+					content: "* ";
+				}
+			}
+
+			&:nth-child(even){
+				&:before{
+					content: "+ ";
+				}
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+	hr{
+		&:before, &:after{
+			top: -9px;
+		}
+	}
+}
+
+#living-together .root-content{
+	font-size: 0.7em;
+	@include align-items(flex-start);
+
+	sub{
+		font-size: 50%;
+		line-height: inherit;
+	}
+}
+
+// INTRODUCTION - END
+
+/*\***************\*/
+
+// INITIALIZATION - START
+
+#initialization .root-content{
+	font-size: 0.6em;
+}
+
+#initialization-storage .root-content{
+	font-size: 0.7em;
+}
+
+#initialization-auto .root-content{
+	font-size: 0.75em;
+
+	pre{
+		font-size: 0.8em;
+	}
+}
+
+#initialization-manual .root-content{
+	font-size: 0.65em;
+}
+
+#initialization-uses .root-content{
+	font-size: 0.8em;
+}
+
+// INITIALIZATION - END
+
+/*\***************\*/
+
+// TEMPLATES - START
+
+// TEMPLATES - END
+
+/*\***************\*/
+
+// EXPRESSIONS - START
+
+// EXPRESSIONS - END
+
+/*\***************\*/

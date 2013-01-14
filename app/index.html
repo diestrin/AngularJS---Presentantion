@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>AngularJS for Digitas</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="styles/main.css">
+        <script src="scripts/vendor/modernizr.min.js"></script>
+    </head>
+    <body>
+    
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+
+        <section id="impress">
+            <article id="intro" class="step" data-x="0" data-y="-1600" data-z="13800">
+                <div class="root">
+                    <header>Introduction - The need</header>
+                    <div class="root-content">
+                        <p>There's a <em>huge need</em> of a framework to solve the large and high scalable application in the web, that's why today you can find easyly more than <strong>10 or more frameworks</strong> trying to solve the same need.</p>
+                    </div>
+                    <div class="root-footer"></div>
+                </div>
+                <footer>AngularJS - Digitas - Bosz</footer>
+            </article>
+
+            <article id="the-need" class="step" data-x="0" data-y="-1200" data-z="11500" data-rotate-x="90">
+                <div class="root">
+                    <header>Introduction - The need</header>
+                    <div class="root-content">
+                        <p>The problem is that every framework tries to solve the problem from their own perspective, so you need to learn each different system.</p>
+                        <hr>
+                        <p>The difference with <em>Angular</em>, is that it's based on web standards, so you can easily find a counterpart in the <abbr title="Hyper Text Markup Languaje" class="uppercase">html</abbr> spec, that's not ready yet in the browser and use it <strong class="uppercase">now</strong>.</p>
+                    </div>
+                    <div class="root-footer"></div>
+                </div>
+                <footer>AngularJS - Digitas - Bosz</footer>
+            </article>
+
+            <article id="other-frame" class="step" data-x="0" data-y="-600" data-z="13800" data-rotate-x="180">
+                <div class="root">
+                    <header>Introduction - Other Frameworks</header>
+                    <div class="root-content">
+                        <ul class="fancy">
+                            <li>
+                                <a href="http://backbonejs.org/">Backbone</a>
+                            </li>
+                            <li>
+                                <a href="http://meteor.com/">Meteor</a>
+                            </li>
+                            <li>
+                                <a href="http://emberjs.com/">EmberJS</a>
+                            </li>
+                            <li>
+                                <a href="http://knockoutjs.com/">KockoutJS</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="root-footer"></div>
+                </div>
+                <footer>AngularJS - Digitas - Bosz</footer>
+            </article>
+
+            <article id="html-vs-angular" class="step" data-x="0" data-y="0" data-z="11500" data-rotate-x="0">
+                <div class="root">
+                    <header>Introduction - Angular and html</header>
+                    <div class="root-content">
+                        <ul>
+                            <li><abbr title="Hyper Text Markup Languaje version 5" class="uppercase">html5</abbr> has the <em>&lt;template&gt;</em> tag to store templates in the document.</li>
+                            <li>Angular uses the <abbr title="Hyper Text Markup Languaje" class="uppercase">html</abbr> as a live template.</li>
+                            <li>The next version of <abbr title="JavaScript" class="uppercase">js</abbr> will have modules to wrap logic an share the dependencies of our code.</li>
+                            <li>Angular uses the module dependecies to call different parts of our application, so we just need to load into memory exactly what we need.</li>
+                            <li><abbr title="Hyper Text Markup Languaje version 5" class="uppercase">html5</abbr> has the <abbr title="Document Object Model" class="uppercase">dom</abbr> shadow to create widgets or small fragments of pages, so we just implement them in a global state, and controll them in a separate code.</li>
+                            <li>Angular uses directives to extend the html with custom logic.</li>
+                            <hr>
+                            <li>And as a plus, Angular is <abbr title="Model View Controller" class="uppercase">mvc</abbr> ;)</li>
+                        </ul>
+                    </div>
+                    <div class="root-footer"></div>
+                </div>
+                <footer>AngularJS - Digitas - Bosz</footer>
+            </article>
+
+            <article id="living-together" class="step" data-x="3000" data-y="0" data-z="10000" data-rotate-x="0">
+                <div class="root">
+                    <header>Introduction - Living Together</header>
+                    <div class="root-content">
+                        <p>AngularJS can be used as a complete <abbr title="Model View Controller" class="uppercase">mvc</abbr> framework for the entire application, and basiclly everything can be done through it<sup>*</sup>.</p>
+                        <p>But if you need, Angular can be used with other frameworks and libraries<sup>**</sup>, in any specific place in the site, once or more times in the same application.</p>
+                        <sub>(*) You can wrap external libraries extending the core of Angular.</sub>
+                        <sub>(**) Just follow some guides to avoid conflicts with the functionality.</sub>
+                    </div>
+                    <div class="root-footer"></div>
+                </div>
+                <footer>AngularJS - Digitas - Bosz</footer>
+            </article>
+
+            <article id="initialization" class="step" data-x="0" data-y="0" data-z="9500" data-rotate-x="180">
+                <div class="root">
+                    <header>Initialization - Javascript</header>
+                    <div class="root-content">
+                        <p>Once you include the <em>AngularJS script</em> in your page, create the descriptor of your first aplication in this way:</p>
+                        <pre>angular.module("MyFirstApplication", ["ng"]);</pre>
+                        <p><em>MyFirstApplication</em> is the name that you want in your application.<br>The second parameter is an array of applications that your app depends, in this case Angular expose <em>ng</em> as the most basic application; if you don't want to extend an appication, just send an empty array <code>[]</code>.</p>
+                    </div>
+                    <div class="root-footer"></div>
+                </div>
+                <footer>AngularJS - Digitas - Bosz</footer>
+            </article>
+
+            <article id="initialization-storage" class="step" data-x="-3000" data-y="0" data-z="9800" data-rotate-x="90">
+                <div class="root">
+                    <header>Initialization - Storage</header>
+                    <div class="root-content">
+                        <p>You'll like to store the application in a variable, to keep the reference to it in the future.</p>
+                        <pre>var myAmazingApp = angular.module...</pre>
+                        <p>If you didn't store your application in a variable, you can still reference to it calling to <code>angular.module</code> but without the second parameter.</p>
+                        <pre>angular.module("MyFirstApplication")</pre>
+                        <p>That will search for the application and return it, or throw an error if it doesn;t exists.</p>
+                    </div>
+                    <div class="root-footer"></div>
+                </div>
+                <footer>AngularJS - Digitas - Bosz</footer>
+            </article>
+
+            <article id="initialization-auto" class="step" data-x="0" data-y="-1000" data-z="9500" data-rotate-x="0">
+                <div class="root">
+                    <header>Initialization - Automatic</header>
+                    <div class="root-content">
+                        <p>You can initialize an Angular application automaticlly in the page load with an attribute in the element you want to be the base of the application. You can use several attributes like: <code>ng:app</code>, <code>ng-app</code>, <code>x-ng-app</code>, <code>data-ng-app</code></p>
+<pre>
+&lt;element ng-app="MyFirstApplication"&gt;
+    ...
+&lt;/element&gt;
+</pre>
+                        <p>Note that your application should be declared before been initialized.</p>
+                    </div>
+                    <div class="root-footer"></div>
+                </div>
+                <footer>AngularJS - Digitas - Bosz</footer>
+            </article>
+
+            <article id="initialization-manual" class="step" data-x="0" data-y="0" data-z="9000" data-rotate-y="180">
+                <div class="root">
+                    <header>Initialization - Manual</header>
+                    <div class="root-content">
+                        <p>Also, you can initialize it manually, but this need to be in the page load or after that.</p>
+<pre>
+window.addEventListener("load", function (){
+    angular.bootstrap(element, ["MyFirstApplication"]);
+}, false);
+</pre>
+                        <p>In this case, the bootstrap method takes two parameters, the element that will be the application's root, and the second is an array of <em>application's names</em> to initialize in that element.</p>
+                    </div>
+                    <div class="root-footer"></div>
+                </div>
+                <footer>AngularJS - Digitas - Bosz</footer>
+            </article>
+
+            <article id="initialization-uses" class="step" data-x="0" data-y="-1000" data-z="9000" data-rotate-x="90">
+                <div class="root">
+                    <header>Initialization - Uses</header>
+                    <div class="root-content">
+                        <p>If, for some reason, you need to <em>wait for some asynchronous resource</em> to be loaded, your Angular application should <em>wait for some user data</em> or <em>you don't have code access to the tag</em> you want to be the root element, your best choice is to <strong>initialize it manually</strong>, in the rest of the cases, the best approach is to use the automatic initialization.</p>
+                    </div>
+                    <div class="root-footer"></div>
+                </div>
+                <footer>AngularJS - Digitas - Bosz</footer>
+            </article>
+            
+            <article id="angular" class="step" data-x="0" data-y="0" data-rotate-y="-90" data-scale="50">
+                <embed src="images/AngularJS.svg" type="image/svg+xml"/>
+            </article>
+        </section>
+
+        <aside>
+            <span>for</span>
+            <a href="http://digitas.com/" target="_blank">
+                <img src="images/digitas_logo.png" alt="Digitas" title="Digitas">
+            </a>
+            <a href="http://boszdigital.com/" target="_blank">
+                <img src="images/bosz_logo.png" alt="Bosz Digital" title="Bosz Digital">
+            </a>
+        </aside>
+
+        <!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script-->
+        <!--script>window.jQuery || document.write('<script src="scripts/vendor/jquery.min.js"><\/script>')</script-->
+        <script src="scripts/vendor/impress.js"></script>
+        <script src="scripts/main.js"></script>
+        
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <!--script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script-->
+    </body>
+</html>

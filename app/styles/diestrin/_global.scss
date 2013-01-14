@@ -1,0 +1,42 @@
+@import "compass/css3/images";
+@import "compass/css3/opacity";
+@import "compass/css3/transition";
+
+$palette-red: rgb(182, 47, 51);
+$palette-white: rgb(238, 238, 238);
+
+body {
+	font-family: sans-serif;
+	font-size: 100%;
+	min-height: 740px;
+	@include background(rgb(215, 215, 215) radial-gradient(50% 50%, rgb(240, 240, 240), rgb(190, 190, 190)));
+	$experimental-support-for-svg: true;
+
+	aside{
+		position: absolute;
+		bottom: 0px;
+		right: 0px;
+		@include transparent;
+		@include transition(opacity 1s);
+
+		span{
+			margin: 15px;
+			font-size: 1em;
+			color: #333;
+			text-transform: uppercase;
+			font-family: Helvetica;
+			line-height: 3em;
+			vertical-align: bottom;
+		}
+
+		img{
+			margin: 0 15px 15px 0;
+		}
+	}
+
+	&.impress-on-angular {
+		aside{
+			@include opaque;
+		}
+	}
+}
