@@ -21,6 +21,26 @@
         <!-- Add your site or application content here -->
 
         <section id="impress">
+            <article id="menu" class="step" data-y="-3000">
+                <ul>
+                    <li>
+                        <a href="#/intro">Chapter 1</a>
+                    </li>
+                    <li>
+                        <a href="#/controller">Chapter 2</a>
+                    </li>
+                    <li>
+                        <a href="#/menu">Chapter 3</a>
+                    </li>
+                    <li>
+                        <a href="#/menu">Chapter 4</a>
+                    </li>
+                    <li>
+                        <a href="#/menu">Chapter 5</a>
+                    </li>
+                </ul>
+            </article>
+
             <article id="intro" class="step" data-x="0" data-y="-1600" data-z="13800">
                 <div class="root">
                     <header>Introduction - The need</header>
@@ -148,7 +168,7 @@
                 <footer>AngularJS - Digitas - Bosz</footer>
             </article>
 
-            <article id="initialization-manual" class="step" data-x="0" data-y="0" data-z="9000" data-rotate-y="180">
+            <article id="initialization-manual" class="step" data-x="3000" data-y="0" data-z="9000" data-rotate-y="180">
                 <div class="root">
                     <header>Initialization - Manual</header>
                     <div class="root-content">
@@ -175,33 +195,205 @@ window.addEventListener("load", function (){
                 </div>
                 <footer>AngularJS - Digitas - Bosz</footer>
             </article>
+
+            <article id="templates" class="step" data-x="0" data-y="-1500" data-z="8700" data-rotate-x="0">
+                <div class="root">
+                    <header>Templates</header>
+                    <div class="root-content">
+                        <p>Angular uses the <abbr title="Document Object Model" class="uppercase">dom</abbr> as a live template system, that means that you don't neet to create a new file or declare your template inside a <code>&lt;script&gt;</code> tag any more<sup>*</sup>.</p>
+                        <sub>* You can still doing this if you want.</sub>
+                    </div>
+                    <div class="root-footer"></div>
+                </div>
+                <footer>AngularJS - Digitas - Bosz</footer>
+            </article>
+
+            <article id="templates-types" class="step" data-x="0" data-y="-500" data-z="8300" data-rotate-x="90" data-rotate="180">
+                <div class="root">
+                    <header>Templates - Types</header>
+                    <div class="root-content">
+                        <ul class="fancy">
+                            <li>
+                                You can use templates in the HTML as another kind of tag.
+                                <pre>&lt;p&gt;Hello, my name is {{name}}!&lt;/p&gt;</pre>
+                            </li>
+                            <li>
+                                You can storage templates in a <code>&lt;script&gt;</code> tag.
+<pre>
+&lt;script type="text/ng-template" id="my-template.html"&gt;
+    &lt;p&gt;Hello, my name is {{name}}!&lt;/p&gt;
+&lt;/script&gt;
+</pre>
+                            </li>
+                            <li>
+                                You can storage templates in a string.
+                                <pre>var myTemplate = "Hello, my name is {{name}}!";</pre>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="root-footer"></div>
+                </div>
+                <footer>AngularJS - Digitas - Bosz</footer>
+            </article>
+
+            <article id="templates-expressions" class="step" data-x="2000" data-y="0" data-z="7700" data-rotate-x="180">
+                <div class="root">
+                    <header>Templates - Expressions</header>
+                    <div class="root-content">
+                        <p>There's some rules of what you can do inside a <em>Angular template</em>; you can do whatever you do in javascript, except to change the control flow of your code<sup>*</sup>, you just can use the <em>variables available in your scope</em><sup>**</sup> and you can use <em>Angular Filters</em><sup>**.</sup></p>
+                        <sub>(*) That means no <code>for</code> or <code>if</code> structures</sub>
+                        <sub>(**) We'll talk about that later.</sub>
+                    </div>
+                    <div class="root-footer"></div>
+                </div>
+                <footer>AngularJS - Digitas - Bosz</footer>
+            </article>
+
+            <article id="chapter-1-practice" class="step" data-z="7300">
+                <div class="root">
+                    <header>Chapter 1 - Practice</header>
+                    <div class="root-content">
+                        <p><a href="http://jsfiddle.net/diestrin/rKFTj/" target="_blank">Practice 1</a> - <a href="#/initialization">Initialize Angular</a> and replace the jQuery logic with <a href="#/templates">Angular Templates</a>.</p>
+                        <p><a href="http://jsfiddle.net/diestrin/rKFTj/1" target="_blank">Practice 2</a> - The same as before, but the second step of this practice is optional, remember <a href="#/templates-expressions">you can't use control flow of the code</a>, so you need to think in a solution for this.</p>
+                        <p><strong>Set up the fiddle:</strong> please add this urls: <code>http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js</code> and <code>http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js</code> to the <em>Add Resources</em> panel.</p>
+                        <p>Once you're done, please click on update and send me both links.</p>
+                    </div>
+                    <div class="root-footer"></div>
+                </div>
+                <footer>AngularJS - Digitas - Bosz</footer>
+            </article>
+
+            <article id="controller" class="step" data-z="7300" data-rotate="-90" data-rotate-x="45" data-x="1000" data-y="-1500">
+                <div class="root">
+                    <header>Controller - Introduction</header>
+                    <div class="root-content">
+                        <p>The <em>Angular Controller</em> is a place where you put the logic that controls the view (template). You can have <em>more than one controller</em>, but alway one will be the father of the other, you cannot have controllers as brothers.</p>
+                        <p>In the <em>Controller Invocation</em> is where we told Angular which extra code we'll need, but we'll talk about later.</p>
+                        <p>Each controller has it's own <em>Angular Scope</em> so, let's take a look at the Scope first</p>
+                    </div>
+                    <div class="root-footer"></div>
+                </div>
+                <footer>AngularJS - Digitas - Bosz</footer>
+            </article>
+
+            <article id="scope" class="step" data-z="7300" data-rotate="90" data-y="-1500">
+                <div class="root">
+                    <header>Scope - Introduction</header>
+                    <div class="root-content">
+                        <p>The <em>Angular Scope</em> is like the javascript scope, it's just the space of values that you have avaliable in runtime to read and/or write; the main difference is that your scope is always in syncronization with your templates.</p>
+                        <p>An <em>Angular Scope</em> in pure javascript is just a <abbr title="JavaScript Object Notation" class="uppercase">json</abbr> object, so you can acces by <em>dot notation</em> like <code>$scope.property;</code> or by <em>square brackets</em> like <code>$scope["propery"];</code></p>
+                    </div>
+                    <div class="root-footer"></div>
+                </div>
+                <footer>AngularJS - Digitas - Bosz</footer>
+            </article>
+
+            <article id="controller-scope" class="step" data-z="6300" data-y="0">
+                <div class="root">
+                    <header>Controller - Scope</header>
+                    <div class="root-content">
+                        <p>To initialize a controller you just need to do this:</p>
+<pre>
+myAngularApp.controller("NameOfTheController", function ($scope){
+    // create variables in the scope here
+});
+</pre>
+                        <p>You create a controller with a <code>controller</code> function of your application reference. It takes two parameters, the name of your controller, and a function or an array*. The function is the constructor of the controller, and the parameters it takes are spetial.</p>
+                        <p>In this case the parameter name is $scope, but this is not a random name, Angular will search the object you're requesting to, and call this function with that parameter</p>
+                        <sub>(*) We'll talk about the array later.</sub>
+                    </div>
+                    <div class="root-footer"></div>
+                </div>
+                <footer>AngularJS - Digitas - Bosz</footer>
+            </article>
+
+            <article id="scope-globally" class="step" data-z="6300" data-y="-1500" data-rotate="90">
+                <div class="root">
+                    <header>Scope - Globally</header>
+                    <div class="root-content">
+                        <p>The $scope object is allergic to the global variables, please don't do this:</p>
+                        <code>$scope.window = window;</code>
+                        <p>The why is beacause Angular need to control exactly what the $scope stores, and if you do that, the window object is changing continuously, and Angular will no see those changes. There's other way to do this, but we'll talk about them in other leson.</p>
+                        <p>To edit the $scope or what it stores, you need to be inside of an <em>Angular Function</em>.</p>
+                    </div>
+                    <div class="root-footer"></div>
+                </div>
+                <footer>AngularJS - Digitas - Bosz</footer>
+            </article>
+
+            <article id="controller-html" class="step" data-z="5800" data-y="-3000" data-x"2000" data-rotate="-90">
+                <div class="root">
+                    <header>Controller - Implementation</header>
+                    <div class="root-content">
+                        <p>Once declared your controller, you can use it in the html, like this:</p>
+<pre>
+&lt;element ng-controller="NameOfTheController"&gt;
+    ... use normal html here, and make templates that use the scope ...
+&lt;/element&gt;
+</pre>
+                        <p>Inside the tag with the controller, you can read (and write) the scope of your controller and it's parents, wait, WHAT? Yes, you can have a ng-controller inside of an ng-controller, in the child controller, you can use both scopes, but in the parent, you just can use it's own scope.</p>
+                    </div>
+                    <div class="root-footer"></div>
+                </div>
+                <footer>AngularJS - Digitas - Bosz</footer>
+            </article>
+
+            <article id="scope-template" class="step" data-z="5800" data-y="1500" data-x"2000" data-rotate="90">
+                <div class="root">
+                    <header>Scope - Templates</header>
+                    <div class="root-content">
+                        <p>You can use what you store in the scope in this way:</p>
+<pre>
+myAngularApp.controller("NameOfTheController", function ($scope){
+   $scope.myName = "Diego Barahona"; 
+});
+...
+&lt;element ng-controller="NameOfTheController"&gt;
+    Hello! My name is {{myName}}!
+&lt;/element&gt;
+</pre>
+                        <p>Remeber, the $scope can store what you want, that means an array: <code>{{myArray[1]}}</code>, an object: <code>{{myObject.property.value}}</code> and even function: <code>{{myFunction()}}</code>. Also remember that you can perform operations in template, so you can do things like <code>{{myWord}} {{{"true":"", "false":"doesn't"}[myWord.length > 0]}} has mode than 1 letter.</code></p>
+                    </div>
+                    <div class="root-footer"></div>
+                </div>
+                <footer>AngularJS - Digitas - Bosz</footer>
+            </article>
+
+            <article id="scope-data-binding" class="step" data-z="5000" data-y="0" data-x"2000" data-rotate="180">
+                <div class="root">
+                    <header>Scope - Data Binding</header>
+                    <div class="root-content">
+                        <p>One of the amazing parts of Angular, is the data-binding, that means that if you cange something in you Scope in the javascript, it will be inmediatly changed in your tempalte, and if you change something in your template, it'll be avaliable inmediatly in your javascript.</p>
+                        <p>Let's just reveal some Angular components to you, so you can have a more clear idea of this. In any input element, you can write the attribute ng-model, and the value will create or write an variable in your current $scope, and store the value of the input.</p>
+                    </div>
+                    <div class="root-footer"></div>
+                </div>
+                <footer>AngularJS - Digitas - Bosz</footer>
+            </article>
             
             <article id="angular" class="step" data-x="0" data-y="0" data-rotate-y="-90" data-scale="50">
-                <embed src="images/AngularJS.svg" type="image/svg+xml"/>
+                <embed src="./images/AngularJS.svg" type="image/svg+xml"/>
             </article>
         </section>
 
         <aside>
             <span>for</span>
             <a href="http://digitas.com/" target="_blank">
-                <img src="images/digitas_logo.png" alt="Digitas" title="Digitas">
+                <img src="./images/digitas_logo.png" alt="Digitas" title="Digitas">
             </a>
             <a href="http://boszdigital.com/" target="_blank">
-                <img src="images/bosz_logo.png" alt="Bosz Digital" title="Bosz Digital">
+                <img src="./images/bosz_logo.png" alt="Bosz Digital" title="Bosz Digital">
             </a>
         </aside>
 
-        <!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script-->
-        <!--script>window.jQuery || document.write('<script src="scripts/vendor/jquery.min.js"><\/script>')</script-->
         <script src="scripts/vendor/impress.js"></script>
         <script src="scripts/main.js"></script>
-        
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <!--script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+
+        <script>
+            var _gaq=[['_setAccount','UA-37683011-1'],['_trackPageview']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
             g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script-->
+        </script>
     </body>
 </html>
