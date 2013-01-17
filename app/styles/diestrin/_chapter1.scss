@@ -102,6 +102,55 @@
 
 // TEMPLATES - START
 
+#templates .root-content {
+	font-size: 0.9em;
+
+	@include align-items(flex-start);
+
+	sub{
+		font-size: 50%;
+		line-height: inherit;
+	}
+
+}
+
+#templates-types .root-content {
+	font-size: 0.5em;
+
+	li{
+		margin: 1.2em 0;
+	}
+}
+
+#templates-expressions .root-content{
+	font-size: 0.8em;
+
+	@include align-items(flex-start);
+
+	sub{
+		font-size: 50%;
+		line-height: inherit;
+	}
+}
+
+#chapter-1-practice .root-content{
+	font-size: 0.5em;
+
+	a{
+		color: #333;
+		border-bottom: 1px dotted;
+
+		&:hover{
+			color: black;
+		}
+
+	}
+
+	code{
+		font-size: 0.8em;
+	}
+}
+
 // TEMPLATES - END
 
 /*\***************\*/
