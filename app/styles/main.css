@@ -641,6 +641,63 @@ footer {
 }
 
 /*\***************\*/
+/* line 105, ../../app/styles/diestrin/_chapter1.scss */
+#templates .root-content {
+  font-size: 0.9em;
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  -ms-align-items: flex-start;
+  -o-align-items: flex-start;
+  align-items: flex-start;
+}
+/* line 110, ../../app/styles/diestrin/_chapter1.scss */
+#templates .root-content sub {
+  font-size: 50%;
+  line-height: inherit;
+}
+
+/* line 117, ../../app/styles/diestrin/_chapter1.scss */
+#templates-types .root-content {
+  font-size: 0.5em;
+}
+/* line 120, ../../app/styles/diestrin/_chapter1.scss */
+#templates-types .root-content li {
+  margin: 1.2em 0;
+}
+
+/* line 125, ../../app/styles/diestrin/_chapter1.scss */
+#templates-expressions .root-content {
+  font-size: 0.8em;
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  -ms-align-items: flex-start;
+  -o-align-items: flex-start;
+  align-items: flex-start;
+}
+/* line 130, ../../app/styles/diestrin/_chapter1.scss */
+#templates-expressions .root-content sub {
+  font-size: 50%;
+  line-height: inherit;
+}
+
+/* line 136, ../../app/styles/diestrin/_chapter1.scss */
+#chapter-1-practice .root-content {
+  font-size: 0.5em;
+}
+/* line 139, ../../app/styles/diestrin/_chapter1.scss */
+#chapter-1-practice .root-content a {
+  color: #333;
+  border-bottom: 1px dotted;
+}
+/* line 143, ../../app/styles/diestrin/_chapter1.scss */
+#chapter-1-practice .root-content a:hover {
+  color: black;
+}
+/* line 149, ../../app/styles/diestrin/_chapter1.scss */
+#chapter-1-practice .root-content code {
+  font-size: 0.8em;
+}
+
 /*\***************\*/
 /*\***************\*/
 /* line 3, ../../app/styles/diestrin/_chapter2.scss */
@@ -666,4 +723,44 @@ footer {
 /* line 19, ../../app/styles/diestrin/_chapter2.scss */
 #controller-html .root-content {
   font-size: 0.6em;
+}
+
+/* line 23, ../../app/styles/diestrin/_chapter2.scss */
+#scope-template .root-content {
+  font-size: 0.5em;
+}
+
+/* line 27, ../../app/styles/diestrin/_chapter2.scss */
+#scope-data-binding .root-content {
+  font-size: 0.6em;
+}
+
+/* line 1, ../../app/styles/diestrin/_chapter3.scss */
+#services .root-content {
+  font-size: 0.6em;
+}
+
+/* line 5, ../../app/styles/diestrin/_chapter3.scss */
+#services-declaration .root-content {
+  font-size: 0.5em;
+}
+
+/* line 9, ../../app/styles/diestrin/_chapter3.scss */
+#services-implementation .root-content {
+  font-size: 0.5em;
+}
+
+/* line 13, ../../app/styles/diestrin/_chapter3.scss */
+#dependency-manager .root-content {
+  font-size: 0.45em;
+}
+
+/* line 17, ../../app/styles/diestrin/_chapter3.scss */
+#services-angular .root-content {
+  font-size: 0.8em;
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  -ms-align-items: flex-start;
+  -o-align-items: flex-start;
+  align-items: flex-start;
 }

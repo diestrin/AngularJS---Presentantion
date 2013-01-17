@@ -30,7 +30,7 @@
                         <a href="#/controller">Chapter 2</a>
                     </li>
                     <li>
-                        <a href="#/menu">Chapter 3</a>
+                        <a href="#/services">Chapter 3</a>
                     </li>
                     <li>
                         <a href="#/menu">Chapter 4</a>
@@ -45,7 +45,7 @@
                 <div class="root">
                     <header>Introduction - The need</header>
                     <div class="root-content">
-                        <p>There's a <em>huge need</em> of a framework to solve the large and high scalable application in the web, that's why today you can find easyly more than <strong>10 or more frameworks</strong> trying to solve the same need.</p>
+                        <p>There's a <em>huge need</em> of a framework to solve the large and high scalable application in the web, that's why today you can find easily more than <strong>10 or more frameworks</strong> trying to solve the same need.</p>
                     </div>
                     <div class="root-footer"></div>
                 </div>
@@ -58,7 +58,7 @@
                     <div class="root-content">
                         <p>The problem is that every framework tries to solve the problem from their own perspective, so you need to learn each different system.</p>
                         <hr>
-                        <p>The difference with <em>Angular</em>, is that it's based on web standards, so you can easily find a counterpart in the <abbr title="Hyper Text Markup Languaje" class="uppercase">html</abbr> spec, that's not ready yet in the browser and use it <strong class="uppercase">now</strong>.</p>
+                        <p>The difference with <em>Angular</em>, is that it's based on web standards, so you can easily find a counterpart in the <abbr title="Hyper Text Markup Languaje" class="uppercase">HTML</abbr> spec, that's not ready yet in the browser and use it <strong class="uppercase">now</strong>.</p>
                     </div>
                     <div class="root-footer"></div>
                 </div>
@@ -91,15 +91,15 @@
 
             <article id="html-vs-angular" class="step" data-x="0" data-y="0" data-z="11500" data-rotate-x="0">
                 <div class="root">
-                    <header>Introduction - Angular and html</header>
+                    <header>Introduction - Angular and HTML</header>
                     <div class="root-content">
                         <ul>
                             <li><abbr title="Hyper Text Markup Languaje version 5" class="uppercase">html5</abbr> has the <em>&lt;template&gt;</em> tag to store templates in the document.</li>
                             <li>Angular uses the <abbr title="Hyper Text Markup Languaje" class="uppercase">html</abbr> as a live template.</li>
                             <li>The next version of <abbr title="JavaScript" class="uppercase">js</abbr> will have modules to wrap logic an share the dependencies of our code.</li>
-                            <li>Angular uses the module dependecies to call different parts of our application, so we just need to load into memory exactly what we need.</li>
-                            <li><abbr title="Hyper Text Markup Languaje version 5" class="uppercase">html5</abbr> has the <abbr title="Document Object Model" class="uppercase">dom</abbr> shadow to create widgets or small fragments of pages, so we just implement them in a global state, and controll them in a separate code.</li>
-                            <li>Angular uses directives to extend the html with custom logic.</li>
+                            <li>Angular uses the module dependencies to call different parts of our application, so we just need to load into memory exactly what we need.</li>
+                            <li><abbr title="Hyper Text Markup Languaje version 5" class="uppercase">html5</abbr> has the <abbr title="Document Object Model" class="uppercase">dom</abbr> shadow to create widgets or small fragments of pages, so we just implement them in a global state, and control them in a separate code.</li>
+                            <li>Angular uses directives to extend the HTML with custom logic.</li>
                             <hr>
                             <li>And as a plus, Angular is <abbr title="Model View Controller" class="uppercase">mvc</abbr> ;)</li>
                         </ul>
@@ -113,7 +113,7 @@
                 <div class="root">
                     <header>Introduction - Living Together</header>
                     <div class="root-content">
-                        <p>AngularJS can be used as a complete <abbr title="Model View Controller" class="uppercase">mvc</abbr> framework for the entire application, and basiclly everything can be done through it<sup>*</sup>.</p>
+                        <p>AngularJS can be used as a complete <abbr title="Model View Controller" class="uppercase">mvc</abbr> framework for the entire application, and basically everything can be done through it<sup>*</sup>.</p>
                         <p>But if you need, Angular can be used with other frameworks and libraries<sup>**</sup>, in any specific place in the site, once or more times in the same application.</p>
                         <sub>(*) You can wrap external libraries extending the core of Angular.</sub>
                         <sub>(**) Just follow some guides to avoid conflicts with the functionality.</sub>
@@ -127,9 +127,9 @@
                 <div class="root">
                     <header>Initialization - Javascript</header>
                     <div class="root-content">
-                        <p>Once you include the <em>AngularJS script</em> in your page, create the descriptor of your first aplication in this way:</p>
+                        <p>Once you include the <em>AngularJS script</em> in your page, create the descriptor of your first application in this way:</p>
                         <pre>angular.module("MyFirstApplication", ["ng"]);</pre>
-                        <p><em>MyFirstApplication</em> is the name that you want in your application.<br>The second parameter is an array of applications that your app depends, in this case Angular expose <em>ng</em> as the most basic application; if you don't want to extend an appication, just send an empty array <code>[]</code>.</p>
+                        <p><em>MyFirstApplication</em> is the name that you want in your application.<br>The second parameter is an array of applications that your app depends, in this case Angular expose <em>ng</em> as the most basic application; if you don't want to extend an application, just send an empty array <code>[]</code>.</p>
                     </div>
                     <div class="root-footer"></div>
                 </div>
@@ -144,7 +144,7 @@
                         <pre>var myAmazingApp = angular.module...</pre>
                         <p>If you didn't store your application in a variable, you can still reference to it calling to <code>angular.module</code> but without the second parameter.</p>
                         <pre>angular.module("MyFirstApplication")</pre>
-                        <p>That will search for the application and return it, or throw an error if it doesn;t exists.</p>
+                        <p>That will search for the application and return it, or throw an error if it doesn't exists.</p>
                     </div>
                     <div class="root-footer"></div>
                 </div>
@@ -155,7 +155,7 @@
                 <div class="root">
                     <header>Initialization - Automatic</header>
                     <div class="root-content">
-                        <p>You can initialize an Angular application automaticlly in the page load with an attribute in the element you want to be the base of the application. You can use several attributes like: <code>ng:app</code>, <code>ng-app</code>, <code>x-ng-app</code>, <code>data-ng-app</code></p>
+                        <p>You can initialize an Angular application automatically in the page load with an attribute in the element you want to be the base of the application. You can use several attributes like: <code>ng:app</code>, <code>ng-app</code>, <code>x-ng-app</code>, <code>data-ng-app</code></p>
 <pre>
 &lt;element ng-app="MyFirstApplication"&gt;
     ...
@@ -200,7 +200,7 @@ window.addEventListener("load", function (){
                 <div class="root">
                     <header>Templates</header>
                     <div class="root-content">
-                        <p>Angular uses the <abbr title="Document Object Model" class="uppercase">dom</abbr> as a live template system, that means that you don't neet to create a new file or declare your template inside a <code>&lt;script&gt;</code> tag any more<sup>*</sup>.</p>
+                        <p>Angular uses the <abbr title="Document Object Model" class="uppercase">dom</abbr> as a live template system, that means that you don't need to create a new file or declare your template inside a <code>&lt;script&gt;</code> tag any more<sup>*</sup>.</p>
                         <sub>* You can still doing this if you want.</sub>
                     </div>
                     <div class="root-footer"></div>
@@ -251,10 +251,10 @@ window.addEventListener("load", function (){
 
             <article id="chapter-1-practice" class="step" data-z="7300">
                 <div class="root">
-                    <header>Chapter 1 - Practice</header>
+                    <header>Chapter 1 - Practise</header>
                     <div class="root-content">
-                        <p><a href="http://jsfiddle.net/diestrin/rKFTj/" target="_blank">Practice 1</a> - <a href="#/initialization">Initialize Angular</a> and replace the jQuery logic with <a href="#/templates">Angular Templates</a>.</p>
-                        <p><a href="http://jsfiddle.net/diestrin/rKFTj/1" target="_blank">Practice 2</a> - The same as before, but the second step of this practice is optional, remember <a href="#/templates-expressions">you can't use control flow of the code</a>, so you need to think in a solution for this.</p>
+                        <p><a href="http://jsfiddle.net/diestrin/rKFTj/" target="_blank">Practise 1</a> - <a href="#/initialization">Initialize Angular</a> and replace the jQuery logic with <a href="#/templates">Angular Templates</a>.</p>
+                        <p><a href="http://jsfiddle.net/diestrin/rKFTj/1" target="_blank">Practise 2</a> - The same as before, but the second step of this practise is optional, remember <a href="#/templates-expressions">you can't use control flow of the code</a>, so you need to think in a solution for this.</p>
                         <p><strong>Set up the fiddle:</strong> please add this urls: <code>http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js</code> and <code>http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js</code> to the <em>Add Resources</em> panel.</p>
                         <p>Once you're done, please click on update and send me both links.</p>
                     </div>
@@ -280,8 +280,8 @@ window.addEventListener("load", function (){
                 <div class="root">
                     <header>Scope - Introduction</header>
                     <div class="root-content">
-                        <p>The <em>Angular Scope</em> is like the javascript scope, it's just the space of values that you have avaliable in runtime to read and/or write; the main difference is that your scope is always in syncronization with your templates.</p>
-                        <p>An <em>Angular Scope</em> in pure javascript is just a <abbr title="JavaScript Object Notation" class="uppercase">json</abbr> object, so you can acces by <em>dot notation</em> like <code>$scope.property;</code> or by <em>square brackets</em> like <code>$scope["propery"];</code></p>
+                        <p>The <em>Angular Scope</em> is like the javascript scope, it's just the space of values that you have available in runtime to read and/or write; the main difference is that your scope is always in synchronization with your templates.</p>
+                        <p>An <em>Angular Scope</em> in pure javascript is just a <abbr title="JavaScript Object Notation" class="uppercase">json</abbr> object, so you can access by <em>dot notation</em> like <code>$scope.property;</code> or by <em>square brackets</em> like <code>$scope["property"];</code></p>
                     </div>
                     <div class="root-footer"></div>
                 </div>
@@ -313,7 +313,7 @@ myAngularApp.controller("NameOfTheController", function ($scope){
                     <div class="root-content">
                         <p>The $scope object is allergic to the global variables, please don't do this:</p>
                         <code>$scope.window = window;</code>
-                        <p>The why is beacause Angular need to control exactly what the $scope stores, and if you do that, the window object is changing continuously, and Angular will no see those changes. There's other way to do this, but we'll talk about them in other leson.</p>
+                        <p>The why is because Angular need to control exactly what the $scope stores, and if you do that, the window object is changing continuously, and Angular will no see those changes. There's other way to do this, but we'll talk about them in other lesson.</p>
                         <p>To edit the $scope or what it stores, you need to be inside of an <em>Angular Function</em>.</p>
                     </div>
                     <div class="root-footer"></div>
@@ -328,7 +328,7 @@ myAngularApp.controller("NameOfTheController", function ($scope){
                         <p>Once declared your controller, you can use it in the html, like this:</p>
 <pre>
 &lt;element ng-controller="NameOfTheController"&gt;
-    ... use normal html here, and make templates that use the scope ...
+    ... use normal HTML here, and make templates that use the scope ...
 &lt;/element&gt;
 </pre>
                         <p>Inside the tag with the controller, you can read (and write) the scope of your controller and it's parents, wait, WHAT? Yes, you can have a ng-controller inside of an ng-controller, in the child controller, you can use both scopes, but in the parent, you just can use it's own scope.</p>
@@ -342,7 +342,7 @@ myAngularApp.controller("NameOfTheController", function ($scope){
                 <div class="root">
                     <header>Scope - Templates</header>
                     <div class="root-content">
-                        <p>You can use what you store in the scope in this way:</p>
+                        <p>You can use scope in the templates in this way:</p>
 <pre>
 myAngularApp.controller("NameOfTheController", function ($scope){
    $scope.myName = "Diego Barahona"; 
@@ -352,7 +352,7 @@ myAngularApp.controller("NameOfTheController", function ($scope){
     Hello! My name is {{myName}}!
 &lt;/element&gt;
 </pre>
-                        <p>Remeber, the $scope can store what you want, that means an array: <code>{{myArray[1]}}</code>, an object: <code>{{myObject.property.value}}</code> and even function: <code>{{myFunction()}}</code>. Also remember that you can perform operations in template, so you can do things like <code>{{myWord}} {{{"true":"", "false":"doesn't"}[myWord.length > 0]}} has mode than 1 letter.</code></p>
+                        <p>Remember, the $scope can store what you want, that means an array: <code>{{myArray[1]}}</code>, an object: <code>{{myObject.property.value}}</code> and even function: <code>{{myFunction()}}</code>. Also remember that you can perform operations in template, so you can do things like <code>{{myWord}} {{{"true":"", "false":"doesn't"}[myWord.length > 0]}} has mode than 1 letter.</code></p>
                     </div>
                     <div class="root-footer"></div>
                 </div>
@@ -363,8 +363,95 @@ myAngularApp.controller("NameOfTheController", function ($scope){
                 <div class="root">
                     <header>Scope - Data Binding</header>
                     <div class="root-content">
-                        <p>One of the amazing parts of Angular, is the data-binding, that means that if you cange something in you Scope in the javascript, it will be inmediatly changed in your tempalte, and if you change something in your template, it'll be avaliable inmediatly in your javascript.</p>
+                        <p>One of the amazing parts of Angular, is the <em>data-binding</em>, that means that if you change something in you Scope in the javascript, it will be <em>immediately changed</em> in your template, and if you change something in your template, it'll be available immediately in your javascript.</p>
                         <p>Let's just reveal some Angular components to you, so you can have a more clear idea of this. In any input element, you can write the attribute ng-model, and the value will create or write an variable in your current $scope, and store the value of the input.</p>
+                        <pre>&lt;input type="text" ng-model="myUserInput"&gt;</pre>
+                    </div>
+                    <div class="root-footer"></div>
+                </div>
+                <footer>AngularJS - Digitas - Bosz</footer>
+            </article>
+
+            <article id="services" class="step" data-z="5500" data-y="-1000" data-rotate-y="90">
+                <div class="root">
+                    <header>Services</header>
+                    <div class="root-content">
+                        <p>The <em>Angular Services</em> are abstracted logic that not control the logic business, their propose are to hold on some constant code while the entire application, and to provide access to common calls or global attributes.</p>
+                        <p>Did you remember that use global variables with the scope is not a recommendation?<br> Well, if you need to access in the controller to some specific javascript code, the best approach is to create an Angular Service.</p>
+                    </div>
+                    <div class="root-footer"></div>
+                </div>
+                <footer>AngularJS - Digitas - Bosz</footer>
+            </article>
+
+            <article id="services-declaration" class="step" data-z="5000" data-y="-2000" data-rotate-y="180">
+                <div class="root">
+                    <header>Services - Declaration</header>
+                    <div class="root-content">
+                        <p>To create an Angular Service call to the <em>factory</em> function of your angular application</p>
+<pre>
+myAngularApp.factory("nameOfTheService", function (){
+    ... logic here ...
+    return something;
+});
+</pre>
+                        <p>The attributes are like in the controller, the name of the service you want to register, and a function (or an array), this function is the constructor of the service, and should return any kind of data.</p>
+                        <p>The <em>Angular Services</em> are singletons instances, that means that they well be executed one at the start of the application, and never again.</p>
+                    </div>
+                    <div class="root-footer"></div>
+                </div>
+                <footer>AngularJS - Digitas - Bosz</footer>
+            </article>
+
+            <article id="services-implementation" class="step" data-z="6000" data-y="-2000" data-rotate-y="180">
+                <div class="root">
+                    <header>Services - Implementation</header>
+                    <div class="root-content">
+                        <p>To implement the creation of a <em>Service</em>, Angular created the dependency manager, to just push in your javascript scope what you exactly need for each logic.</p>
+<pre>
+myAmazingApp.controller("myAmazingController", function ($scope, MyAmazingService){
+    ... use MyAmazingService here ....
+});
+</pre>
+                        <p>In this case, you call the service with the dependency manager, Angular will look for a Service named <code>MyAmazingService</code> and will return the constructor's return value, that's why your Service needs to return something, a number, a string, a function or even an object with functions and values.</p>
+                        <p>A last thing, you can call services inside a service, like in controllers, so you can extend your service with another service ;)</p>
+                    </div>
+                    <div class="root-footer"></div>
+                </div>
+                <footer>AngularJS - Digitas - Bosz</footer>
+            </article>
+
+            <article id="dependency-manager" class="step" data-z="6000" data-rotate-y="180">
+                <div class="root">
+                    <header>Dependency Manager</header>
+                    <div class="root-content">
+                        <p>Now that you now something about the <em>Dependency Manager</em> I can tell you why the <code>.controller</code> and the <code>.factory</code> can send a function or an array.</p>
+                        <p>Both are correct, the difference is when you minify your scripts, let's see</p>
+                        <pre>myAngularApp.controller("myController", function($scope, MyService){...});</pre>
+                        <strong>Minified</strong>
+                        <pre>a.b("myController",function(c,d){...});</pre>
+                        <p>The thing is that Angular will search for a service named <em>c</em> or <em>d</em>, those doesn't exists. You can fix that with this:</p>
+                        <pre>myAngularApp.controller("myController", ["$scope", "MyService", function(MyScope, MyServiceWithOtherName){...}]);</pre>
+                        <p>You put an array, with all your dependencies as strings and the last index is the function that will be called with those services in the same order. Cool right?</p>
+                    </div>
+                    <div class="root-footer"></div>
+                </div>
+                <footer>AngularJS - Digitas - Bosz</footer>
+            </article>
+
+            <article id="services-angular" class="step" data-z="6000" data-rotate-y="180" data-x="2000">
+                <div class="root">
+                    <header>Services from Angular</header>
+                    <div class="root-content">
+                        <p>Angular has some useful built-in services</p>
+                        <ul class="fancy">
+                            <li>$window</li>
+                            <li>$document</li>
+                            <li>$location</li>
+                            <li>$rootScope</li>
+                            <li>$http</li>
+                            <li>$timeout</li>
+                        </ul>
                     </div>
                     <div class="root-footer"></div>
                 </div>
