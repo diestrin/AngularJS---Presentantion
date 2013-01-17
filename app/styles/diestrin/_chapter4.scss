@@ -1,0 +1,51 @@
+/*#services-angular .root-content{
+	font-size: 0.8em;
+	@include align-items(flex-start);
+}*/
+#directives .root-content{
+	font-size: 0.45em;
+
+	pre{
+		font-size: 1.2em;
+	}
+}
+
+#directives-create{
+	font-size: 1.1em;
+	width: 1400px;
+	padding: 0 0 0 10px;
+
+	pre{
+		background-color: #FFF;
+	}
+}
+
+#directives-call .root-content{
+	font-size: 0.6em;
+
+	ul{
+		&>li{
+			&>ul{
+				margin-left: 50px;
+			}
+		}
+	}
+}
+
+#directives-angular .root-content{
+	font-size: 0.8em;
+	@include align-items(flex-start);
+
+	ul{
+		margin-left: 20px;
+	}
+}
+
+#filters .root-content{
+	@include align-items(flex-start);
+	font-size: 0.65em;
+
+	ul{
+		margin-left: 20px;
+	}
+}

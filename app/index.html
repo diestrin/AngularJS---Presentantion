@@ -33,10 +33,13 @@
                         <a href="#/services">Chapter 3</a>
                     </li>
                     <li>
-                        <a href="#/menu">Chapter 4</a>
+                        <a href="#/directives">Chapter 4</a>
                     </li>
                     <li>
                         <a href="#/menu">Chapter 5</a>
+                    </li>
+                    <li>
+                        <a href="#/menu">Chapter 6</a>
                     </li>
                 </ul>
             </article>
@@ -358,7 +361,7 @@ myAngularApp.controller("NameOfTheController", function ($scope){
                 <footer>AngularJS - Digitas - Bosz</footer>
             </article>
 
-            <article id="scope-data-binding" class="step" data-z="5000" data-y="0" data-x"2000" data-rotate="180">
+            <article id="scope-data-binding" class="step" data-z="4800" data-y="0" data-x"2000" data-rotate="180">
                 <div class="root">
                     <header>Scope - Data Binding</header>
                     <div class="root-content">
@@ -383,7 +386,7 @@ myAngularApp.controller("NameOfTheController", function ($scope){
                 <footer>AngularJS - Digitas - Bosz</footer>
             </article>
 
-            <article id="services-declaration" class="step" data-z="5000" data-y="-2000" data-rotate-y="180">
+            <article id="services-declaration" class="step" data-z="4800" data-y="-2000" data-rotate-y="180">
                 <div class="root">
                     <header>Services - Declaration</header>
                     <div class="root-content">
@@ -451,6 +454,136 @@ myAmazingApp.controller("myAmazingController", function ($scope, MyAmazingServic
                             <li>$http</li>
                             <li>$timeout</li>
                         </ul>
+                    </div>
+                    <div class="root-footer"></div>
+                </div>
+                <footer>AngularJS - Digitas - Bosz</footer>
+            </article>
+
+            <article id="directives" class="step" data-z="6000" data-rotate-y="90" data-x="-3000" data-y="-1000">
+                <div class="root">
+                    <header>Directives - Introduction</header>
+                    <div class="root-content">
+                        <p>Directives are an amazing feature of Angular, that let us extend the HTML language with our abstracted logic. Let's say that we have an eComerce page with this code:</p>
+<pre>
+&lt;form&gt;
+    &lt;input type="button" value="Buy"&gt;
+    &lt;div class="hdden"&gt;
+        &lt;p&gt;Units&lt;/p&gt;
+        &lt;input type="number"&gt;
+        &lt;input type="submit" value="Check Out"&gt;
+    &lt;/div&gt;
+&lt;/form&gt;
+</pre>
+
+                        <p>We'll see this everywhere in our application, but the logic will always be the same. Instead of that, we can create an <em>Angular Directive</em> called <code>myShoppingButton</code> and now we can replace all this code, with this <code>&lt;my-shopping-button&gt;</code> and in other place, create a template and a logic to interact with this.</p>
+                    </div>
+                    <div class="root-footer"></div>
+                </div>
+                <footer>AngularJS - Digitas - Bosz</footer>
+            </article>
+
+            <article id="directives-create" class="step" data-z="5000" data-x="-1500" data-y="-1000">
+                <!-- <div class="root"> -->
+                    <!-- <header>Directives - Creating</header> -->
+                    <!-- <div class="root-content"> -->
+                        <!-- <p>To create a Directive you will need to know the structure.</p> -->
+<pre>
+myApp.directive(
+    "nameOfTheDirective", // Tha name of the directive must be camelCase
+    [$service1, $service2, function ($s1, $s2){
+        return {
+            name: '', // It's obvious
+            priority: 1, // The order of the execution compared with other directives.
+            terminal: true, // It will be the last directive executed
+            scope: {}, // {} = isolate / no inheritance, true = child of current, false/undefined = no change
+            cont­rol­ler: function($scope, $element, $attrs, $transclue) {}, // If your directive needs a new controller
+            require: 'ngModel', // Array or string of the directives that are required for your directive, ? = optional, ^ = check parent elements
+            restrict: 'A', // E = Element, A = Attribute, C = Class, M = Comment
+            template: '', // It's obvious
+            templateUrl: '', // It's obvious
+            replace: true, // true = replace the entire element with your template, false/undefined = append
+            transclude: true, // The truth, I don't really understand this! :(
+            compile: function(tElement, tAttrs, transclude){}, // The compile function it's where you make DOM transforms in the HTML.
+            link: function($scope, iElm, iAttrs, controller) { // The place you do for logic of the directive, just available if there's no compile function.
+                
+            }
+        }
+    }]
+);
+</pre>
+                    <!-- </div> -->
+                    <!-- <div class="root-footer"></div> -->
+                <!-- </div> -->
+                <!-- <footer>AngularJS - Digitas - Bosz</footer> -->
+            </article>
+
+            <article id="directives-call" class="step" data-z="6000" data-z="5000" data-rotate-y="180" data-y="-1000">
+                <div class="root">
+                    <header>Directives - Implementation</header>
+                    <div class="root-content">
+                        <p>There's too many ways to call a directive from your HTML</p>
+                        <ul class="fancy">
+                            <li>
+                                <strong>Element</strong>
+                                <code>&lt;my-amazing-directive parameter="value"&gt;&lt;/my-amazing-directive&gt;</code>
+                            </li>
+                            <li>
+                                <strong>Attribute</strong>
+                                <ul>
+                                    <li><code>&lt;div my-amazing-attribute = "value"&gt;</code></li>
+                                    <li><code>&lt;div my:amazing:attribute = "value"&gt;</code></li>
+                                    <li><code>&lt;div x-my-amazing-attribute = "value"&gt;</code></li>
+                                    <li><code>&lt;div data-my-amazing-attribute = "value"&gt;</code></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Class</strong>
+                                <code>&lt;div class="my-amazing-attribute: value;"&gt;</code>
+                            </li>
+                            <li>
+                                <strong>Comment</strong>
+                                <code>&lt;!-- directive: my-amazing-attribute value --&gt;</code>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="root-footer"></div>
+                </div>
+                <footer>AngularJS - Digitas - Bosz</footer>
+            </article>
+
+            <article id="directives-angular" class="step" data-z="5000" data-rotate-y="180" data-y="2500">
+                <div class="root">
+                    <header>Directives - Angular</header>
+                    <div class="root-content">
+                        <p>Angular has its own built-in Directives</p>
+                        <ul class="fancy">
+                            <li>ng-app / ng-controller</li>
+                            <li>form / input</li>
+                            <li>ng-click / ng-submit / ng-mouseover / ...</li>
+                            <li>ng-class / ng-css</li>
+                            <li>ng-show / ng-hide</li>
+                            <li>ng-href / ng-src</li>
+                            <li>ng-repeat / ng-switch</li>
+                        </ul>
+                    </div>
+                    <div class="root-footer"></div>
+                </div>
+                <footer>AngularJS - Digitas - Bosz</footer>
+            </article>
+
+            <article id="filters" class="step" data-z="4700" data-x="1500">
+                <div class="root">
+                    <header>Filters</header>
+                    <div class="root-content">
+                        <p>Angular has some special helpers for templates, called filters, as I say, they propose is to help:</p>
+                        Use them: <code>&lt;p&gt;{{val | filter:attr}}&lt;/p&gt;</code> or <code>$filter('filter')(value, attr)</code>
+                        <ul class="fancy">
+                            <li>currency: transform 1234.45 into $1,234.56</li>
+                            <li>date: tranform 1288323623006 into 10/28/2010 9:40PM</li>
+                            <li>uppercase: transform 'angular' into 'ANGULAR'</li>
+                        </ul>
+                        <p>You can create your own filters too!</p>
                     </div>
                     <div class="root-footer"></div>
                 </div>

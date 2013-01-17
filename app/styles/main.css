@@ -1,4 +1,4 @@
-/* line 17, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,46 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-
-/* line 103, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -383,14 +382,15 @@ body #menu ul li {
   display: inline-block;
   padding: 5px 10px;
   margin: 5px;
+  width: 220px;
 }
 
-/* line 10, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+/* line 10, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
 html, body {
   height: 100%;
 }
 
-/* line 12, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+/* line 12, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
 .root {
   clear: both;
   min-height: 100%;
@@ -398,13 +398,12 @@ html, body {
   height: 100%;
   margin-bottom: -72px;
 }
-
-/* line 18, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+/* line 18, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
 .root .root-footer {
   height: 72px;
 }
 
-/* line 20, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+/* line 20, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
 footer {
   clear: both;
   position: relative;
@@ -702,7 +701,6 @@ footer {
 
 /*\***************\*/
 /*\***************\*/
-
 /* line 3, ../../app/styles/diestrin/_chapter2.scss */
 #controller .root-content {
   font-size: 0.7em;
@@ -766,4 +764,65 @@ footer {
   -ms-align-items: flex-start;
   -o-align-items: flex-start;
   align-items: flex-start;
+}
+
+/*#services-angular .root-content{
+  font-size: 0.8em;
+  @include align-items(flex-start);
+}*/
+/* line 5, ../../app/styles/diestrin/_chapter4.scss */
+#directives .root-content {
+  font-size: 0.45em;
+}
+/* line 8, ../../app/styles/diestrin/_chapter4.scss */
+#directives .root-content pre {
+  font-size: 1.2em;
+}
+
+/* line 13, ../../app/styles/diestrin/_chapter4.scss */
+#directives-create {
+  font-size: 1.1em;
+  width: 1400px;
+  padding: 0 0 0 10px;
+}
+/* line 18, ../../app/styles/diestrin/_chapter4.scss */
+#directives-create pre {
+  background-color: #FFF;
+}
+
+/* line 23, ../../app/styles/diestrin/_chapter4.scss */
+#directives-call .root-content {
+  font-size: 0.6em;
+}
+/* line 28, ../../app/styles/diestrin/_chapter4.scss */
+#directives-call .root-content ul > li > ul {
+  margin-left: 50px;
+}
+
+/* line 35, ../../app/styles/diestrin/_chapter4.scss */
+#directives-angular .root-content {
+  font-size: 0.8em;
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  -ms-align-items: flex-start;
+  -o-align-items: flex-start;
+  align-items: flex-start;
+}
+/* line 39, ../../app/styles/diestrin/_chapter4.scss */
+#directives-angular .root-content ul {
+  margin-left: 20px;
+}
+
+/* line 44, ../../app/styles/diestrin/_chapter4.scss */
+#filters .root-content {
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  -ms-align-items: flex-start;
+  -o-align-items: flex-start;
+  align-items: flex-start;
+  font-size: 0.65em;
+}
+/* line 48, ../../app/styles/diestrin/_chapter4.scss */
+#filters .root-content ul {
+  margin-left: 20px;
 }
