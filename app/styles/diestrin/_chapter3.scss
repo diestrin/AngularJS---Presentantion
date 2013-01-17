@@ -1,0 +1,20 @@
+#services .root-content{
+	font-size: 0.6em;
+}
+
+#services-declaration .root-content{
+	font-size: 0.5em;
+}
+
+#services-implementation .root-content{
+	font-size: 0.5em;
+}
+
+#dependency-manager .root-content{
+	font-size: 0.45em;
+}
+
+#services-angular .root-content{
+	font-size: 0.8em;
+	@include align-items(flex-start);
+}
